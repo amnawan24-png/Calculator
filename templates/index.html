@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet"href="{{url_for('static',filename='style.css')}}">
+        <title>My first flask app</title>
+    </head>
+
+    <body>
+        <div class="container">
+            <h1>Calculator</h1>
+            <form method="POST">
+                <div class="card">
+                    <label>First Number</label><br><br>
+                    <input type="number"name="num1" placeholder="Enter First Number" required><br><br>
+                    <label>Second Number</label><br><br>
+                    <input type="number"name="num2" placeholder="Enter Second Number" required><br><br>
+                </div>
+                <div class="buttons">
+                    <button type="submit"name="operation"value="add"class="add">Add</button>
+                    <button type="submit"name="operation"value="subtract"class="subtract">Subtract</button>
+                    <button type="submit"name="operation"value="multiply"class="multiply">Multiply</button>
+                    <button type="submit"name="operation"value="divide"class="divide">Divide</button>
+                </div>
+                <div class="result-box">
+                    <h2>Result</h2>
+                    <input type="text"value="{{result}}"readonly>
+                </div>
+            </form>
+
+        </div>
+
+    </body>
+</html>

@@ -1,0 +1,95 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+body{
+    background: white;   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+
+}
+.container{
+    width:550px;
+    text-align:center;
+    background-color: #dbeafe;   
+    padding:20px;
+    border-radius:25px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.15);
+}
+h1{
+    text-align: center;
+    color: #5b21b6;
+    font-weight: bolder;
+}
+.card{
+    background-color:#ffe4e6;  
+    padding:30px;
+    border-radius:20px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.15);
+}
+
+.card label{
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    color: purple;
+    font-weight: bold;
+}
+.card input{
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    
+}
+.buttons{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    gap:15px;
+    margin-top: 10px;
+}
+.buttons button{
+    padding: 20px;
+    font-size: 22px;
+    border-radius: 15px;
+    transition: 0.3s;
+}
+.buttons button:hover{
+    transform: scale(1.05);
+}
+.add{
+    background: #94f3b7;
+}
+.subtract{
+    background: #ee9595;
+}
+.multiply{
+    background: #a7c6f8;
+}
+.divide{
+    background: #f7d69e;
+}
+.result-box{
+    margin-top: 10px;
+    background: #ffe4e6;
+    padding: 25px;
+    border-radius: 20px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.15);
+    margin-bottom: 10px;
+}
+.result-box h2{
+    color: #5b21b6;
+    margin-bottom: 15px;
+}
+.result-box input{
+    padding: 18px;
+    border-radius: 12px;
+    margin-bottom: 5px;
+    font-size: 28px;
+    text-align: center;
+    font-weight: bold;
+}
